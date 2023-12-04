@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homeartifact.AddTask">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="277.0" layoutY="14.0" text="Add Task">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="100.0" text="Task">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDescription" layoutX="229.0" layoutY="92.0" onAction="#getTaskDescription" prefHeight="51.0" prefWidth="449.0" promptText="Write small description">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="52.0" layoutY="170.0" text="Set Deadline">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dpDeadline" layoutX="229.0" layoutY="170.0" onAction="#getDeadlineDate" prefHeight="35.0" prefWidth="217.0" promptText="Set a date" />
+      <Button fx:id="btnOk" layoutX="473.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="OK" />
+      <Button fx:id="btnCancel" layoutX="532.0" layoutY="333.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+   </children>
+</AnchorPane>
